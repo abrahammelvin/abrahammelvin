@@ -1,3 +1,4 @@
+/* body */
 body{
     margin: 0;
     padding: 0;
@@ -25,6 +26,7 @@ body{
     list-style: none;
     overflow: hidden;
     background-color: white;
+    padding-top: 20px;
 }
 
 .header ul a{
@@ -47,7 +49,8 @@ body{
     float: left;
     display: block;
     padding: 20px 20px;
-    font-size: 22px;
+    padding-top: 30px;
+    font-size: 24px;
     text-decoration: none;
     color: black;
 }
@@ -68,9 +71,10 @@ body{
 .header .menu-icon .nav-icon{
     background-color: black;
     display: block;
-    width: 22px;
+    width: 28px;
     height: 3px;
     position: relative;
+    top: 20%;
     transition: background .2s ease-out;
 }
 
@@ -126,12 +130,13 @@ body{
     right: 0;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,7.5),rgba(0,0,0,7.5)), url(work1.jpeg); 
+    background-image: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.55)), url(work.jpeg); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     z-index: -1;
 }
+
 
 .home{
     position: relative;
@@ -149,7 +154,7 @@ body{
 /* about section */
 .about-container{
     position: relative;
-    height: 41.6em;
+    height: 44.6em;
     width: 90%;
     left: 5%;
     right: 5%;
@@ -161,7 +166,7 @@ body{
     display: block;
     margin: 0 auto;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 55px;
     padding-top: 10px;
     font-size: 16px;
 }
@@ -214,7 +219,7 @@ font-weight: 900;}
     left: 5%;
     right: 5%;
     width: 90%;
-    height: 15em;
+    height: 16em;
     margin-top: 120px;
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
@@ -242,7 +247,7 @@ font-weight: 900;}
     left: 5%;
     right: 5%;
     width: 90%;
-    height: 240px;
+    height: 280px;
     margin-top: 120px;
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
@@ -332,18 +337,6 @@ font-weight: 900;}
     padding-bottom: 10px;
 }
 
-
-
-
-
-
-.home{background-image:linear-gradient(rgba(0, 0, 0, 0.85), rgba(0,0,0,0.55)), Url(work.jpeg);
-background-repeat: no-repeat;
-background-size: cover;
-height: 100vh;
-width: 100%;
-}
-
 .home h1{color: yellow;}
 
 
@@ -360,7 +353,7 @@ width: 100%;
     }
 
     .header li a{
-        padding: 20px 25px;
+        padding: 10px 15px;
     }
 
     .header .logo{
@@ -380,10 +373,20 @@ width: 100%;
     .header ul a{
         transition: transform .3s ease-in-out;
     }
+
     .header ul a:hover{
         transform: rotate(6deg);
         color: crimson;
         background: transparent;
+    }
+
+    .header .logo{
+        float: left;
+        display: block;
+        padding: 30px 30px;
+        font-size: 28px;
+        text-decoration: none;
+        color: black;
     }
 
     .home h1{
@@ -398,11 +401,11 @@ width: 100%;
         right: 0;
         width: 100%;
         height: 100vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0,0,0,0.45)), Url(work.jpeg); 
+        background-image: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.55)), url(work.jpeg); 
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        z-index: -2; 
+        z-index: -1;
     }
     
     .header ul a{
@@ -420,7 +423,7 @@ width: 100%;
         display: block;
         margin: 0 auto;
         text-align: center;
-        margin-top: 65px;
+        margin-top: 125px;
         padding-top: 40px;
         font-size: 20px;
     }
@@ -524,194 +527,5 @@ width: 100%;
     
 }
 
-.sucess{width: 50%;
-height: 300px;}
-
-.site{width: 50%;
-    height: 300px;}
-
-    .logo-h{color: rgb(250, 234, 7);
-    font-size: 25px;
-padding: 20px;
-border: 3px solid black;
-width: 160px;
-background-color: black;
-cursor: pointer;
-font-style: bold;
-font-weight: 700;}
-
     
-
-@media only screen and (max-width:480px)
-
-{
-    .header li{
-        float: left;
-    }
-
-    .header li a{
-        padding: 20px 25px;
-    }
-
-    .header .logo{
-        font-size: 32px;
-    }
-
-    .header .menu{
-        clear: none;
-        float: right;
-        max-height: none;
-    }
-
-    .header .menu-icon{
-        display: none;
-    }
-
-    .header ul a{
-        transition: transform .3s ease-in-out;
-    }
-    .header ul a:hover{
-        transform: rotate(6deg);
-        color: crimson;
-        background: transparent;
-    }
-
-    .home h1{
-        font-size: 50px;
-        color: yellow;
-    }
-
-    .home::before{
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: auto;
-        background-image: url(work.jpeg); 
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        z-index: -1; 
-    }
-    
-    .header ul a{
-        padding: 20px;
-        font-size: 22px;
-    }
-
-    
-    .about-container{
-        height: 60em;
-        
-    }
-
-    .about-title{
-        display: block;
-        margin: 0 auto;
-        text-align: center;
-        margin-top: 65px;
-        padding-top: 40px;
-        font-size: 20px;
-    }
-
-    .about-image img{
-        height: 400px;
-        width: 100%;
-        margin-top: 20px;
-        border-radius: 50%;
-    }
-
-    .name h1{
-        font-size: 30px;
-        margin-top: 40px;
-    }
-    
-    .name h3{
-        margin-top: 25px;
-        font-size: 22px;
-    }
-
-    .about-content{
-        margin-top: 50px;
-        font-size: 22px;
-    }
-
-    .achievement-container{
-        height: 35em;
-    }
-
-    .achievements{
-        font-size: 22px;
-    }
-    
-    .achievements h1{
-        font-size: 30px;
-    }
-
-    .skills-container{
-        height: 300px;
-    }
-
-    .skills{
-        margin-top: 70px;
-        font-size: 22px;
-    }
-     
-    
-    .skills h1{
-        font-size: 30px;
-    }
-    
-    .footer-container{
-        height: 700px;
-        margin-top: 150px;
-    }
-    
-    .footer-content i{
-        font-size: 22px;
-        padding-top: 5px;
-    }
-    
-    .footer-content h1{
-        font-size: 30px;
-        padding-top: 10px;
-        color: crimson;
-    }
-    
-    .footer-content p{
-        font-size: 22px;
-        
-    }
-    
-    .footer-content .personal-data h1{
-        font-size: 26px;
-    }
-    
-    .footer-content button{
-        padding: 15px;
-        margin-top: 0px;
-        font-size: 18px;
-    }
-    
-    .footer-content button a{
-    
-        text-decoration: none;
-        color: white;
-        padding: 10px 10px;
-    }
-    
-    .footer-copyright{
-        height: 120px;
-    }
-    
-    .footer-copyright p{
-        text-align: center;
-        font-size: 16px;
-        padding-top: 30px;
-        padding-bottom: 20px;
-    }  
-}
-
-
 
